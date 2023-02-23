@@ -1,14 +1,8 @@
-$blue: #407fb3;
+@use'./custom' as *;
+@use'../utils/mixins';
 
-body{
-    background-color: $blue;
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-}
 
-h1:hover{
- color: #25567e;
- cursor: pointer;  
-
+//agregar mixins
+.site-header{
+    @include mixins.bgImage('../img/header.jpg', $secondary);
 }
